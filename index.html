@@ -2,31 +2,32 @@
 <html lang="de">
 <head>
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1028225786814519');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1028225786814519&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1028225786814519');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1028225786814519&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weiterleitung zu AuraPaws</title>
     <style>
-        /* Basis-Styling, inspiriert durch moderne, tierfreundliche Brandings (hell, clean, einladend) */
         :root {
-            --primary: #8b5cf6; /* Ein warmes, sanftes Lila, oft für moderne Tier-Shops genutzt */
-            --bg: #fdfcf8;      /* Ein sehr sanftes Off-White/Creme */
-            --text: #1f2937;    /* Dunkles Grau statt hartem Schwarz */
+            /* Die Farbe aus image_299757.png */
+            --primary: #00a8ac; 
+            --bg: #fdfcf8;
+            --text: #1f2937;
         }
 
         body {
@@ -53,13 +54,14 @@ src="https://www.facebook.com/tr?id=1028225786814519&ev=PageView&noscript=1"
             color: var(--primary);
         }
 
+        /* Echter Button Style */
         .btn {
-            display: inline-block;
             background-color: var(--primary);
             color: white;
             padding: 1rem 2rem;
-            border-radius: 50px; /* Abgerundete Buttons sind modern */
-            text-decoration: none;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
             font-weight: 600;
             font-size: 1.1rem;
             transition: transform 0.2s ease, opacity 0.2s ease;
@@ -77,7 +79,10 @@ src="https://www.facebook.com/tr?id=1028225786814519&ev=PageView&noscript=1"
         <h1>Willkommen bei AuraPaws</h1>
         <p>Wir leiten dich direkt zum Shop weiter.</p>
         <br>
-        <a href="https://aurapaws.lovable.app" class="btn">Klicke hier, um zum Shop zu gelangen</a>
+        <!-- Button mit JavaScript onclick Event -->
+        <button class="btn" onclick="window.location.href='https://aurapaws.lovable.app'">
+            Klicke hier, um zum Shop zu gelangen
+        </button>
     </div>
 </body>
 </html>
