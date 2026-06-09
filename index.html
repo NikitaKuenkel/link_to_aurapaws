@@ -14,20 +14,16 @@
     fbq('init', '1028225786814519');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1028225786814519&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Meta Pixel Code -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weiterleitung zu AuraPaws</title>
+    <title>Sichere Weiterleitung | AuraPaws</title>
     <style>
         :root {
-            /* Die Farbe aus image_299757.png */
             --primary: #00a8ac; 
-            --bg: #fdfcf8;
-            --text: #1f2937;
+            /* Sanfter Verlaufshintergrund */
+            --bg-gradient: linear-gradient(135deg, #fdfcf8 0%, #eefbfb 100%);
         }
 
         body {
@@ -37,52 +33,78 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: var(--bg);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--text);
-            text-align: center;
+            background: var(--bg-gradient);
+            font-family: 'Segoe UI', -apple-system, sans-serif;
+            color: #374151;
         }
 
-        .container {
-            padding: 2rem;
-            max-width: 400px;
+        .card {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 168, 172, 0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            border: 1px solid rgba(0, 168, 172, 0.1);
         }
 
         h1 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
         }
 
-        /* Echter Button Style */
+        p {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            color: #6b7280;
+        }
+
         .btn {
             background-color: var(--primary);
             color: white;
-            padding: 1rem 2rem;
-            border-radius: 50px;
+            padding: 1.2rem 2.5rem;
+            border-radius: 12px;
             border: none;
             cursor: pointer;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: transform 0.2s ease, opacity 0.2s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            width: 100%;
         }
 
         .btn:hover {
-            transform: scale(1.05);
-            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 168, 172, 0.3);
+        }
+
+        /* Kleiner Hinweis für das Sicherheitsgefühl */
+        .secure-note {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Willkommen bei AuraPaws</h1>
-        <p>Wir leiten dich direkt zum Shop weiter.</p>
-        <br>
-        <!-- Button mit JavaScript onclick Event -->
+
+    <div class="card">
+        <h1>Fast geschafft!</h1>
+        <p>Wir leiten dich sicher weiter in unseren Shop, damit du das Beste für deinen Liebling findest.</p>
+        
         <button class="btn" onclick="window.location.href='https://aurapaws.lovable.app'">
-            Klicke hier, um zum Shop zu gelangen
+            Zum Shop weitergehen
         </button>
+
+        <div class="secure-note">
+            <span>🔒 Sichere Verbindung</span>
+        </div>
     </div>
+
 </body>
 </html>
